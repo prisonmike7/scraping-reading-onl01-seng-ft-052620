@@ -8,4 +8,5 @@ doc = Nokogiri::HTML(open("https://flatironschool.com/"))
 
 puts doc # Whole website HTML
 puts doc.css(".headline-26OIBN") # <h1 class="headline-26OIBN">Change things.</h1>
-puts doc.css(".headline-26OIBN").text # Change things
+puts doc.css(".headline-26OIBN").text.strip # Change things
+puts doc.css(".title-3Kf9MY").text.strip # Change things
